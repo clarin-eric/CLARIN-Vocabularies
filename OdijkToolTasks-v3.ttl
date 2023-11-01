@@ -4,6 +4,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix csdtt: <http://vocabs.sshopencloud.eu/vocabularies/tooltasks/> .
+@prefix csdls: <http://vocabs.sshopencloud.eu/vocabularies/linguisticsubjects/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix tadirah: <http://vocabs.dariah.eu/tadirah/> .
@@ -57,11 +58,6 @@ csdtt:0008 a skos:Concept ;
  skos:broader csdtt:0113 ;
  skos:exactMatch tadirah:authorshipAttribution .
 
-csdtt:0009 a skos:Concept ;
- skos:inScheme csdtt: ;
- skos:prefLabel "browsing"@en ;
- skos:definition "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects (source: Wikipedia)"@en ;
- skos:broader csdtt:0017 .
 
 csdtt:0010 a skos:Concept ;
  skos:inScheme csdtt: ;
@@ -174,16 +170,11 @@ csdtt:0026 a skos:Concept ;
  rdfs:isDefinedBy <https://en.wiktionary.org/wiki/diarization> ;
  skos:broader csdtt:0112 .
 
-csdtt:0027 a skos:Concept ;
- skos:inScheme csdtt: ;
- skos:prefLabel "dictionary searching"@en ;
- skos:definition "text search in a dictionary (considerd as  a sequence of characters)"@en ;
- skos:broader csdtt:0114 .
-
 csdtt:0028 a skos:Concept ;
  skos:inScheme csdtt: ;
- skos:prefLabel "discourse"@en ;
- skos:definition "level of linguistics dealing with the relations between co-occurring utterances"@en ;
+ skos:prefLabel "discourse processing"@en ;
+ skos:definition "processing at the discourse level"@en ;
+ skos:related csdls:0045 ;
  skos:broader csdtt:0044, csdtt:0045 .
 
 csdtt:0029 a skos:Concept ;
@@ -283,6 +274,7 @@ csdtt:0042 a skos:Concept ;
 csdtt:0043 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "lexicon searching"@en ;
+ skos:altLabel "dictionary searching"@en ;
  skos:definition "text search in a lexicon"@en ;
  skos:broader csdtt:0114, csdtt:0077 .
 #DGB skos:broader csdtt:0077 .
@@ -310,17 +302,8 @@ csdtt:0046 a skos:Concept ;
 csdtt:0047 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "metadata creation"@en ;
+ skos:altLabel "metadating"@en ;
  skos:definition "the creation of metadata"@en ;
- skos:relatedConcept csdtt:0048 ;
- skos:closeMatch csdtt:0048 ;
- skos:broader csdtt:0124 .
-
-csdtt:0048 a skos:Concept ;
- skos:inScheme csdtt: ;
- skos:prefLabel "metadating"@en ;
- skos:definition "the creation of metadata"@en ;
- skos:relatedConcept csdtt:0047 ;
- skos:closeMatch csdtt:0047 ;
  skos:broader csdtt:0124 .
 
 csdtt:0049 a skos:Concept ;
@@ -331,8 +314,9 @@ csdtt:0049 a skos:Concept ;
 
 csdtt:0050 a skos:Concept ;
  skos:inScheme csdtt: ;
- skos:prefLabel "morphology"@en ;
- skos:definition "level of linguistics dealing with the internal structure of words"@en ;
+ skos:prefLabel "morphological processing"@en ;
+ skos:definition "processing at the morphology level"@en ;
+ skos:related csdls:0021 ;
  skos:broader csdtt:0044, csdtt:0045 ;
  skos:narrower csdtt:0049 .
 
@@ -344,15 +328,16 @@ csdtt:0051 a skos:Concept ;
 
 csdtt:0052 a skos:Concept ;
  skos:inScheme csdtt: ;
- skos:prefLabel "morphosyntax"@en ;
- skos:definition "level of linguistics that deals with properties that play a role both in syntax and morphology"@en ;
+ skos:prefLabel "morphosyntactic processing"@en ;
+ skos:definition "processing at the morphosyntax level"@en ;
+ skos:related csdls:0020 ;
  skos:broader csdtt:0044, csdtt:0045 ;
  skos:narrower csdtt:0051 .
 
 csdtt:0053 a skos:Concept ;
  skos:inScheme csdtt: ;
- skos:prefLabel "multilingual"@en ;
- skos:definition "involving multiple languages"@en ;
+ skos:prefLabel "multilingual processing"@en ;
+ skos:definition "processing involving multiple languages"@en ;
  skos:broader csdtt:0044, csdtt:0045 ;
  skos:narrower csdtt:0046 .
 
@@ -370,8 +355,9 @@ csdtt:0055 a skos:Concept ;
 
 csdtt:0056 a skos:Concept ;
  skos:inScheme csdtt: ;
- skos:prefLabel "multiwords"@en ;
- skos:definition "level of linguistics that deals with multiword expressions, i.e., combinations of words that have properties that cannot be derived from the properties of the individual word nor from the rules by which they have been combined"@en ;
+ skos:prefLabel "multiword expression processing"@en ;
+ skos:definition "processing of multiword expressions"@en ;
+ skos:related csdls:0047 ;
  skos:broader csdtt:0044, csdtt:0045 ;
  skos:narrower tadirah:collocationAnalysis ;
  skos:narrower csdtt:0055, csdtt:0054 .
@@ -387,8 +373,9 @@ csdtt:0057 a skos:Concept ;
 
 csdtt:0058 a skos:Concept ;
  skos:inScheme csdtt: ;
- skos:prefLabel "names"@en ;
- skos:definition "words or combination of words that are used to refer to an entity"@en ;
+ skos:prefLabel "name processing"@en ;
+ skos:definition "processing of names"@en ;
+ skos:related csdls:0046 ;
  skos:broader csdtt:0044, csdtt:0045 ;
  skos:narrower csdtt:0057 .
 
@@ -425,8 +412,9 @@ csdtt:0063 a skos:Concept ;
 
 csdtt:0064 a skos:Concept ;
  skos:inScheme csdtt: ;
- skos:prefLabel "orthography"@en ;
- skos:definition "level of linguistics that deals with the writing system"@en ;
+ skos:prefLabel "orthographic processing"@en ;
+ skos:definition "processing at the orthography level"@en ;
+ skos:related csdls:0024 ; 
  skos:broader csdtt:0044, csdtt:0045 ;
  skos:narrower csdtt:0061, csdtt:0063 .
 
@@ -466,16 +454,11 @@ csdtt:0069 a skos:Concept ;
 
 csdtt:0070 a skos:Concept ;
  skos:inScheme csdtt: ;
- skos:prefLabel "phonetics"@en ;
- skos:definition "level of language analysis that deals with sounds"@en ;
+ skos:prefLabel "phonetic processing"@en ;
+ skos:definition "processing at the phonetic level"@en ;
+ skos:related csdls:0027 ;
  skos:broader csdtt:0044, csdtt:0045 ;
  skos:narrower csdtt:0069 .
-
-csdtt:0071 a skos:Concept ;
- skos:inScheme csdtt: ;
- skos:prefLabel "processing"@en ;
- skos:definition "applying an algorithm to input to yield an output"@en ;
- skos:topConceptOf csdtt: .
 
 csdtt:0072 a skos:Concept ;
  skos:inScheme csdtt: ;
@@ -497,7 +480,7 @@ csdtt:0074 a skos:Concept ;
  skos:prefLabel "question answering"@en ;
  skos:definition "software to provide an answer to a question posed"@en ;
  skos:relatedMatch <http://hdl.handle.net/11459/CCR_C-4428_10017d9a-0387-0a2b-1fbb-515a47bf1ed9> ;
- skos:broader csdtt:0071 .
+ skos:broader csdtt:0123 .
 
 csdtt:0075 a skos:Concept ;
  skos:inScheme csdtt: ;
@@ -543,8 +526,9 @@ csdtt:0080 a skos:Concept ;
 
 csdtt:0081 a skos:Concept ;
  skos:inScheme csdtt: ;
- skos:prefLabel "semantics"@en ;
- skos:definition "level of linguistics that deals with meaning"@en ;
+ skos:prefLabel "semantic processing"@en ;
+ skos:definition "processing at the semantics level"@en ;
+ skos:related csdls:0033 ;
  skos:broader csdtt:0044, csdtt:0045 ;
  skos:narrower csdtt:0110, csdtt:0080, csdtt:0079, csdtt:0005 .
 
@@ -578,8 +562,9 @@ csdtt:0085 a skos:Concept ;
 
 csdtt:0086 a skos:Concept ;
  skos:inScheme csdtt: ;
- skos:prefLabel "sociolinguistics"@en ;
- skos:definition "level of linguistic analysis that deals with the relation between language (use) and society"@en ;
+ skos:prefLabel "sociolinguistic processing"@en ;
+ skos:definition "processing at the sociolinguistics level"@en ;
+ skos:related csdls:0035 ;
  skos:broader csdtt:0044, csdtt:0045 ;
  skos:narrower csdtt:0024 .
 
@@ -638,15 +623,17 @@ csdtt:0094 a skos:Concept ;
 
 csdtt:0095 a skos:Concept ;
  skos:inScheme csdtt: ;
- skos:prefLabel "syntax"@en ;
- skos:definition "level of linguistics that deals with the combination of words and/or morphemes into larger units"@en ;
+ skos:prefLabel "syntactic processing"@en ;
+ skos:definition "processing at the  syntax level"@en ;
+ skos:related csdls:0038 ;
  skos:narrower csdtt:0085, csdtt:0066 ;
  skos:broader csdtt:0044, csdtt:0045 .
 
 csdtt:0096 a skos:Concept ;
  skos:inScheme csdtt: ;
- skos:prefLabel "terminology"@en ;
- skos:definition "level of linguistics that deals with terms, i.e., words or word combinations and their meanings in a specific domain"@en ;
+ skos:prefLabel "terminological processing"@en ;
+ skos:definition "processing at the terminology level"@en ;
+ skos:related csdls:0044 ;
  skos:narrower csdtt:0097 ;
  skos:broader csdtt:0044, csdtt:0045 .
 
@@ -771,10 +758,10 @@ csdtt:0113 a skos:Concept ;
 
 csdtt:0114 a skos:Concept ;
  skos:inScheme csdtt: ;
- skos:prefLabel "lexicon"@en ;
+ skos:prefLabel "lexicon processing"@en ;
  skos:definition "a set of entries of a linguistic unit (morpheme, word, multiword expression, etc) and its properties"@en ;
  rdfs:seeAlso <https://en.wikipedia.org/wiki/Lexicon> ;
- skos:narrower csdtt:0027, csdtt:0041 , csdtt:0042,  csdtt:0043;
+ skos:narrower  csdtt:0041 , csdtt:0042,  csdtt:0043;
  skos:topConceptOf csdtt: .
 
 csdtt:0119 a skos:Concept ;
@@ -801,49 +788,49 @@ csdtt:0121 a skos:Concept ;
 csdtt:0122 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "string processing"@en ;
- skos:definition ""@en ;
+ skos:definition "processing of strings (sequences of characters)"@en ;
  skos:narrower csdtt:0003 ;
  skos:topConceptOf csdtt: .
 
 csdtt:0123 a skos:Concept ;
  skos:inScheme csdtt: ;
- skos:prefLabel "information"@en ;
- skos:definition ""@en ;
+ skos:prefLabel "information processing"@en ;
+ skos:definition "processing or creating interpreted data"@en ;
  skos:narrower csdtt:0038 ;
  skos:topConceptOf csdtt: .
 
 csdtt:0124 a skos:Concept ;
  skos:inScheme csdtt: ;
- skos:prefLabel "metadata"@en ;
- skos:definition ""@en ;
- skos:narrower csdtt:0047, csdtt:0048 ;
+ skos:prefLabel "metadata processing"@en ;
+ skos:definition "processing data that provides information about other data"@en ;
+ skos:narrower csdtt:0047;
  skos:topConceptOf csdtt: .
 
 csdtt:0125 a skos:Concept ;
  skos:inScheme csdtt: ;
- skos:prefLabel "databases"@en ;
- skos:definition ""@en ;
+ skos:prefLabel "database processing"@en ;
+ skos:definition "processing organized collections of data"@en ;
  skos:narrower csdtt:0036 ;
  skos:topConceptOf csdtt: .
 
 csdtt:0126 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "presentation"@en ;
- skos:definition ""@en ;
+ skos:definition "a mode of communication that conveys information from a speaker to an audience"@en ;
  skos:narrower csdtt:0108 ;
  skos:topConceptOf csdtt: .
 
 csdtt:0127 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "generation"@en ;
- skos:definition ""@en ;
+ skos:definition "the process of creating natural langugae expressions"@en ;
  skos:narrower csdtt:0059 ;
  skos:topConceptOf csdtt: .
 
 csdtt:0128 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "understanding"@en ;
- skos:definition ""@en ;
+ skos:definition "the process of interpreting natural language expressions"@en ;
  skos:narrower csdtt:0060 ;
  skos:topConceptOf csdtt: .
 
@@ -885,11 +872,6 @@ tadirah:principalComponentAnalysis a skos:concept ;
 #  a owl:NamedIndividual, owl:Ontology, skos:ConceptScheme .
 
 
-csdtt:0000 a skos:Concept ;
- skos:inScheme csdtt: ;
- skos:prefLabel "top"@en ;
- skos:definition "highest element in a hierachy"@en ;
- skos:topConceptOf csdtt: .
 
 
 csdtt: a skos:ConceptScheme ;
