@@ -428,7 +428,7 @@ csdtt:0064 a skos:Concept ;
  skos:prefLabel "orthography"@en ;
  skos:definition "level of linguistics that deals with the writing system"@en ;
  skos:broader csdtt:0044, csdtt:0045 ;
- skos:narrower csdtt:0061, csdtt:0063 .
+ skos:narrower csdtt:0002, csdtt:0061, csdtt:0063 .
 
 csdtt:0065 a skos:Concept ;
  skos:inScheme csdtt: ;
@@ -484,6 +484,8 @@ csdtt:0072 a skos:Concept ;
  skos:broader csdtt:0113 .
 
 csdtt:0073 a skos:Concept ;
+ owl:deprecated true;
+ dct:isReplacedBy csdtt:0078 ;
  skos:changeNote "querying is now an altLabel for searching" ;
  skos:inScheme csdtt: ;
  skos:prefLabel "querying"@en ;
@@ -766,7 +768,7 @@ csdtt:0113 a skos:Concept ;
  skos:prefLabel "text categorization"@en ;
  skos:definition "software to assign a tekst to one or more categories"@en ;
  rdfs:seeAlso <https://en.wikipedia.org/wiki/Document_classification> ;
- skos:narrower csdtt:0104, csdtt:0092, csdtt:0084, csdtt:0075, csdtt:0072, csdtt:0039, csdtt:0008 ;
+ skos:narrower csdtt:0120, csdtt:0119, csdtt:0104, csdtt:0092, csdtt:0084, csdtt:0075, csdtt:0072, csdtt:0039, csdtt:0008 ;
  skos:broader csdtt:0100 .
 
 csdtt:0114 a skos:Concept ;
@@ -879,7 +881,7 @@ tadirah:principalComponentAnalysis a skos:concept ;
   a owl:NamedIndividual.
 
 #
-#just import the TaDiRAK concepts , not define them as a ConceptScheme
+#just import the TaDiRAH concepts , not define them as a ConceptScheme
 #tadirah:
 #  rdfs:label "TaDiRAH"@en ;
 #  a owl:NamedIndividual, owl:Ontology, skos:ConceptScheme .
@@ -891,7 +893,6 @@ csdtt:0000 a skos:Concept ;
  skos:definition "highest element in a hierachy"@en ;
  skos:topConceptOf csdtt: .
 
-
 csdtt: a skos:ConceptScheme ;
  skos:prefLabel "CLARIN Services Description Tool Task taxonomy"@en ;
  dc:description "Tool Tasks is a taxonomy for classifying tasks for services and tools such as we encounter these in the CLARIN domain"@en ;
@@ -901,8 +902,8 @@ csdtt: a skos:ConceptScheme ;
  dc:title "CLARIN taxonomy for tools and services tasks"@en ;
  dct:created "2023-09-01"^^xsd:date ;
  dct:language iso369-3:dut, iso369-3:eng;
- dct:modified "2023-10-01"^^xsd:date ;
+ dct:modified "2023-11-01"^^xsd:date ;
  owl:versionInfo "1.2"^^xsd:string ;
  dc:identifier <http://hdl.handle.net/11459/CCR_C-2500_a16d939a-58e3-121d-aaa3-05237ec2d206> ;
- skos:hasTopConcept csdtt:0002, csdtt:0004, csdtt:0006, csdtt:0007, csdtt:0019, csdtt:0020, csdtt:0031, csdtt:0065, csdtt:0100, csdtt:0105, csdtt:0112 .
+ skos:hasTopConcept csdtt:0000, csdtt:0004, csdtt:0006, csdtt:0007, csdtt:0019, csdtt:0020, csdtt:0030, csdtt:0031, csdtt:0065, csdtt:0071, csdtt:0077, csdtt:0100, csdtt:0105, csdtt:0111, csdtt:0112, csdtt:0114, csdtt:0121, csdtt:0122, csdtt:0123, csdtt:0124, csdtt:0125, csdtt:0126, csdtt:0127, csdtt:0128 ;
 
