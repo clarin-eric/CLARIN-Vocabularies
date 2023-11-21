@@ -58,6 +58,11 @@ csdtt:0008 a skos:Concept ;
  skos:broader csdtt:0113 ;
  skos:exactMatch tadirah:authorshipAttribution .
 
+csdtt:0009 a skos:Concept ;
+ skos:inScheme csdtt: ;
+ skos:prefLabel "browsing"@en ;
+ skos:definition "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects (source: Wikipedia)"@en ;
+ skos:broader csdtt:0017 .
 
 csdtt:0010 a skos:Concept ;
  skos:inScheme csdtt: ;
@@ -78,6 +83,11 @@ csdtt:0012 a skos:Concept ;
  skos:definition "splitting a word into a sequence of words"@en ;
  skos:broader csdtt:0050 .
 
+csdtt:0009 a skos:Concept ;
+ skos:inScheme csdtt: ;
+ skos:prefLabel "browsing"@en ;
+ skos:definition "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects (source: Wikipedia)"@en ;
+ skos:broader csdtt:0017 .
 
 csdtt:0013 a skos:Concept ;
  skos:inScheme csdtt: ;
@@ -170,11 +180,16 @@ csdtt:0026 a skos:Concept ;
  rdfs:isDefinedBy <https://en.wiktionary.org/wiki/diarization> ;
  skos:broader csdtt:0112 .
 
+csdtt:0027 a skos:Concept ;
+ skos:inScheme csdtt: ;
+ skos:prefLabel "dictionary searching"@en ;
+ skos:definition "text search in a dictionary (considerd as  a sequence of characters)"@en ;
+ skos:broader csdtt:0114 .
+
 csdtt:0028 a skos:Concept ;
  skos:inScheme csdtt: ;
- skos:prefLabel "discourse processing"@en ;
- skos:definition "processing at the discourse level"@en ;
- skos:related csdls:0045 ;
+ skos:prefLabel "discourse"@en ;
+ skos:definition "level of linguistics dealing with the relations between co-occurring utterances"@en ;
  skos:broader csdtt:0044, csdtt:0045 .
 
 csdtt:0029 a skos:Concept ;
@@ -887,5 +902,5 @@ csdtt: a skos:ConceptScheme ;
  dct:modified "2023-11-01"^^xsd:date ;
  owl:versionInfo "1.2"^^xsd:string ;
  dc:identifier <http://hdl.handle.net/11459/CCR_C-2500_a16d939a-58e3-121d-aaa3-05237ec2d206> ;
- skos:hasTopConcept csdtt:0000, csdtt:0004, csdtt:0006, csdtt:0007, csdtt:0019, csdtt:0020, csdtt:0030, csdtt:0031, csdtt:0065, csdtt:0071, csdtt:0077, csdtt:0100, csdtt:0105, csdtt:0111, csdtt:0112, csdtt:0114, csdtt:0121, csdtt:0122, csdtt:0123, csdtt:0124, csdtt:0125, csdtt:0126, csdtt:0127, csdtt:0128 ;
+ skos:hasTopConcept csdtt:0000, csdtt:0004, csdtt:0006, csdtt:0007, csdtt:0019, csdtt:0020, csdtt:0030, csdtt:0031, csdtt:0065, csdtt:0071, csdtt:0077, csdtt:0100, csdtt:0105, csdtt:0111, csdtt:0112, csdtt:0114, csdtt:0121, csdtt:0122, csdtt:0123, csdtt:0124, csdtt:0125, csdtt:0126, csdtt:0127, csdtt:0128 .
 
