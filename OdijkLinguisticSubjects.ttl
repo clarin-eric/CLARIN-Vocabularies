@@ -268,7 +268,7 @@ csdls: a skos:ConceptScheme ;
  dc:title "CLARIN taxonomy for Linguistic Subjects"@en ;
  dct:created "2023-08-01"^^xsd:date ;
  dct:language iso369-3:eng ;
- dct:modified "2023-08-01"^^xsd:date ;
+ dct:modified "2023-11-01"^^xsd:date ;
  owl:versionInfo "1.0"^^xsd:string ;
  skos:hasTopConcept csdls:0002, csdls:0003,csdls:0004,csdls:0005,csdls:0006,csdls:0007,csdls:0008,csdls:0009, csdls:0010,csdls:0011,csdls:0012,csdls:0013,csdls:0014,csdls:0015,csdls:0016,csdls:0017,csdls:0018,csdls:0019, csdls:0020, csdls:0021, csdls:0022, csdls:0023, csdls:0024, csdls:0025, csdls:0026, csdls:0027, csdls:0028, csdls:0029, csdls:0030, csdls:0031,csdls:0032,csdls:0033,csdls:0034,csdls:0035,csdls:0036,csdls:0037,csdls:0038,csdls:0039, csdls:0040, csdls:0041,csdls:0042,csdls:0043 .
 
