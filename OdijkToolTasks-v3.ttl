@@ -1,6 +1,6 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix iso639-3: <http://id.loc.gov/vocabulary/languageschemes/iso6393> .
+@prefix iso639-3: <https://iso639-3.sil.org/code/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix csdtt: <https://vocabs.sshopencloud.eu/vocabularies/csd-tooltasks/> .
