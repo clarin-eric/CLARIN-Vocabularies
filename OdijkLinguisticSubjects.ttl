@@ -1,11 +1,11 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix iso369-3: <http://id.loc.gov/vocabulary/iso639-3> .
+@prefix iso639-3: <http://id.loc.gov/vocabulary/languageschemes/iso6393> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix csdls: <http://vocabs.sshopencloud.eu/vocabularies/linguisticsubjects/> .
+@prefix csdls: <https://vocabs.sshopencloud.eu/vocabularies/linguisticsubjects/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix tadirah: <http://vocabs.dariah.eu/tadirah/> .
+@prefix tadirah: <https://vocabs.dariah.eu/tadirah/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 
@@ -328,13 +328,13 @@ csdls:0047 a skos:Concept ;
 
 csdls: a skos:ConceptScheme ;
  skos:prefLabel "CLARIN Services Description Linguistic Subject taxonomy"@en ;
- dc:description "Linguistic Subject is a taxonomy for classifying tasks for services and tools such as we encounter these in the CLARIN domain"@en ;
+ dct:description "Linguistic Subject is a taxonomy of linguistic subjects used for service and tools description in the CLARIN domain"@en ;
  dc:contributor "Jan Odijk, Daan Broeder, Eline Westerhout, Rogier Kraf, Erica Renkens" ;
  dct:license <https://creativecommons.org/publicdomain/zero/1.0> ;
  dc:title "CLARIN taxonomy for Linguistic Subjects"@en ;
  dct:created "2023-08-01"^^xsd:date ;
- dct:language iso369-3:eng ;
- dct:modified "2023-11-01"^^xsd:date ;
- owl:versionInfo "1.0"^^xsd:string ;
+ dct:language iso639-3:eng ;
+ dct:modified "2024-01-02"^^xsd:date ;
+ owl:versionInfo "1.1.0"^^xsd:string ;
  skos:hasTopConcept csdls:0002, csdls:0003,csdls:0004,csdls:0005,csdls:0006,csdls:0007,csdls:0008,csdls:0009, csdls:0010,csdls:0011,csdls:0012,csdls:0013,csdls:0014,csdls:0015,csdls:0016,csdls:0017,csdls:0018,csdls:0019, csdls:0020, csdls:0021, csdls:0022, csdls:0023, csdls:0024, csdls:0025, csdls:0026, csdls:0027, csdls:0028, csdls:0029, csdls:0030, csdls:0031,csdls:0032,csdls:0033,csdls:0034,csdls:0035,csdls:0036,csdls:0037,csdls:0038,csdls:0039, csdls:0040, csdls:0041,csdls:0042,csdls:0043 .
 
