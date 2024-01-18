@@ -885,15 +885,14 @@ tadirah:principalComponentAnalysis a skos:concept ;
 
 csdtt: a skos:ConceptScheme ;
  skos:prefLabel "CLARIN Services Description Tool Task taxonomy"@en ;
- dc:description "Tool Tasks is a taxonomy for classifying tasks for services and tools such as we encounter these in the CLARIN domain"@en ;
- dct:description "The task(s) carried out by the software or a typical task description of the software."@en ;
+ dct:description "Tool tasks is a taxonomy for classifying task(s) carried out by services and tools such as we encounter these in the CLARIN domain, and/or a typical task description of the software."@en ;
  dc:contributor "Jan Odijk, Daan Broeder, Eline Westerhout, Rogier Kraf, Erica Renkens" ;
  dct:license <https://creativecommons.org/publicdomain/zero/1.0> ;
  dc:title "CLARIN taxonomy for tools and services tasks"@en ;
  dct:created "2023-09-01"^^xsd:date ;
  dct:language iso639-3:nld, iso639-3:eng;
- dct:modified "2023-11-01"^^xsd:date ;
- owl:versionInfo "1.2"^^xsd:string ;
- dc:identifier <http://hdl.handle.net/11459/CCR_C-2500_a16d939a-58e3-121d-aaa3-05237ec2d206> ;
+ dct:modified "2024-01-02"^^xsd:date ;
+ owl:versionInfo "1.3.0"^^xsd:string ;
+ dct:relation <http://hdl.handle.net/11459/CCR_C-2500_a16d939a-58e3-121d-aaa3-05237ec2d206> ;
  skos:hasTopConcept csdtt:0000, csdtt:0004, csdtt:0006, csdtt:0007, csdtt:0019, csdtt:0020, csdtt:0030, csdtt:0031, csdtt:0065, csdtt:0071, csdtt:0077, csdtt:0100, csdtt:0105, csdtt:0111, csdtt:0112, csdtt:0114, csdtt:0121, csdtt:0122, csdtt:0123, csdtt:0124, csdtt:0125, csdtt:0126, csdtt:0127, csdtt:0128 .
 
