@@ -1,6 +1,6 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix iso639-3: <http://id.loc.gov/vocabulary/languageschemes/iso6393> .
+@prefix iso369-3: <http://id.loc.gov/vocabulary/iso639-3> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix csdtt: <http://vocabs.sshopencloud.eu/vocabularies/tooltasks/> .
@@ -900,7 +900,7 @@ csdtt: a skos:ConceptScheme ;
  dct:license <https://creativecommons.org/publicdomain/zero/1.0> ;
  dc:title "CLARIN taxonomy for tools and services tasks"@en ;
  dct:created "2023-09-01"^^xsd:date ;
- dct:language iso639-3:nld, iso639-3:eng;
+ dct:language iso369-3:dut, iso369-3:eng;
  dct:modified "2023-10-01"^^xsd:date ;
  owl:versionInfo "1.2"^^xsd:string ;
  dc:identifier <http://hdl.handle.net/11459/CCR_C-2500_a16d939a-58e3-121d-aaa3-05237ec2d206> ;
