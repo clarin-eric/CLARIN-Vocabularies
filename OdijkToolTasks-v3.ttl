@@ -1,13 +1,13 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix iso369-3: <http://id.loc.gov/vocabulary/iso639-3> .
+@prefix iso639-3: <http://id.loc.gov/vocabulary/iso639-3> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix csdtt: <http://vocabs.sshopencloud.eu/vocabularies/tooltasks/> .
-@prefix csdls: <http://vocabs.sshopencloud.eu/vocabularies/linguisticsubjects/> .
+@prefix csdtt: <https://vocabs.sshopencloud.eu/vocabularies/csd-tooltasks/> .
+@prefix csdls: <https://vocabs.sshopencloud.eu/vocabularies/csd-linguisticsubjects/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix tadirah: <http://vocabs.dariah.eu/tadirah/> .
+@prefix tadirah: <https://vocabs.dariah.eu/tadirah/> .
 
 csdtt:0002 a skos:Concept ;
  skos:inScheme csdtt: ;
@@ -83,12 +83,6 @@ csdtt:0012 a skos:Concept ;
  skos:definition "splitting a word into a sequence of words"@en ;
  skos:broader csdtt:0050 .
 
-csdtt:0009 a skos:Concept ;
- skos:inScheme csdtt: ;
- skos:prefLabel "browsing"@en ;
- skos:definition "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects (source: Wikipedia)"@en ;
- skos:broader csdtt:0017 .
-
 csdtt:0013 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "constituency-based parsing"@en ;
@@ -97,8 +91,8 @@ csdtt:0013 a skos:Concept ;
 
 csdtt:0014 a skos:Concept ;
  skos:inScheme csdtt: ;
- skos:prefLabel "cooccurence addition"@en ;
- skos:definition "tool to find linguistic objects (words, sentences, etc) that co-occur with a given linguistic object"@en ;
+ skos:prefLabel "co-occurence addition"@en ;
+ skos:definition "tool to find linguistic objects (words, sentences, etc.) that co-occur with a given linguistic object"@en ;
  skos:broader csdtt:0056 .
 
 csdtt:0015 a skos:Concept ;
@@ -109,8 +103,8 @@ csdtt:0015 a skos:Concept ;
 
 csdtt:0016 a skos:Concept ;
  skos:inScheme csdtt: ;
- skos:prefLabel "coreference resolution"@en ;
- skos:definition "Coreference resolution is the task of finding all expressions that refer to the same entity in a text."@en ;
+ skos:prefLabel "co-reference resolution"@en ;
+ skos:definition "Co-reference resolution is the task of finding all expressions that refer to the same entity in a text."@en ;
  skos:broader csdtt:0028 .
 
 csdtt:0017 a skos:Concept ;
@@ -123,7 +117,7 @@ csdtt:0017 a skos:Concept ;
 csdtt:0018 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "corpus clean-up"@en ;
- skos:definition "Corpus clean-up is the processing of removing noise (for instance markup) or unwanted elements from a corpus."@en ;
+ skos:definition "Corpus clean-up is the process of removing noise (for instance markup) or unwanted elements from a corpus."@en ;
  skos:broader tadirah:dataCleansing ;
  skos:broader csdtt:0020 .
 
@@ -139,7 +133,7 @@ csdtt:0020 a skos:Concept ;
  skos:prefLabel "corpus processing"@en ;
  skos:definition "processing a corpus"@en ;
  skos:narrower csdtt:0033 ;
- skos:narrower tadirah:concordancing ;
+ skos:narrower tadirah:concordance ;
  skos:topConceptOf csdtt: .
 
 csdtt:0021 a skos:Concept ;
@@ -183,7 +177,7 @@ csdtt:0026 a skos:Concept ;
 csdtt:0027 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "dictionary searching"@en ;
- skos:definition "text search in a dictionary (considerd as  a sequence of characters)"@en ;
+ skos:definition "text search in a dictionary (considered as  a sequence of characters)"@en ;
  skos:broader csdtt:0114 .
 
 csdtt:0028 a skos:Concept ;
@@ -240,7 +234,7 @@ csdtt:0035 a skos:Concept ;
 csdtt:0036 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "indexing"@en ;
- skos:definition "assigning indexes, ie.e keys in an associateive array, to objects"@en ;
+ skos:definition "assigning indexes, i.e. keys in an associative array, to objects"@en ;
  rdfs:seeAlso <https://en.wikipedia.org/wiki/Associative_array> ;
  skos:broader csdtt:0125 .
 
@@ -282,14 +276,13 @@ csdtt:0041 a skos:Concept ;
 csdtt:0042 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "lexicon lookup"@en ;
- skos:definition "checking for the presence of a key in a lexicon and return the entry associated with the key"@en ;
+ skos:definition "checking for the presence of a key in a lexicon and returning the entry associated with the key"@en ;
  skos:broader csdtt:0077 , csdtt:0114 .
 #DGB skos:broader csdtt:0077 .
 
 csdtt:0043 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "lexicon searching"@en ;
- skos:altLabel "dictionary searching"@en ;
  skos:definition "text search in a lexicon"@en ;
  skos:broader csdtt:0114, csdtt:0077 .
 #DGB skos:broader csdtt:0077 .
@@ -365,7 +358,7 @@ csdtt:0054 a skos:Concept ;
 csdtt:0055 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "multiword unit identification"@en ;
- skos:definition "A tool's ability to recognize multi-word expressions or units (MWUs). An MWUs is an expression formed by two or more words that has properties that cannot be derived from its component words or the way they are combined by regular rules."@en ;
+ skos:definition "A tool's ability to recognize multi-word expressions or units (MWUs). An MWU is an expression formed by two or more words that has properties that cannot be derived from its component words or the way they are combined by regular rules."@en ;
  skos:broader csdtt:0056 .
 
 csdtt:0056 a skos:Concept ;
@@ -416,7 +409,7 @@ csdtt:0061 a skos:Concept ;
 csdtt:0062 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "optical character recognition"@en ;
- skos:definition "the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded tekst"@en ;
+ skos:definition "the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text"@en ;
  skos:broader csdtt:0111 .
 
 csdtt:0063 a skos:Concept ;
@@ -588,14 +581,14 @@ csdtt:0086 a skos:Concept ;
 csdtt:0087 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "speech recognition"@en ;
- skos:definition "software to recognise spokern natural language and convert it to  text or actions"@en ;
+ skos:definition "software to recognise spoken natural language and convert it to  text or actions"@en ;
  rdfs:isDefinedBy <https://en.wikipedia.org/wiki/Speech_recognition> ;
  skos:broader csdtt:0112 .
 
 csdtt:0088 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "speech segmentation"@en ;
- skos:definition "software to identifythe boundaries between words, syllables, or phonemes in spoken natural languages"@en ;
+ skos:definition "software to identify the boundaries between words, syllables, or phonemes in spoken natural languages"@en ;
  rdfs:isDefinedBy <https://en.wikipedia.org/wiki/Speech_segmentation> ;
  skos:broader csdtt:0112 .
 
@@ -604,7 +597,7 @@ csdtt:0089 a skos:Concept ;
  skos:prefLabel "speech transcription"@en ;
  skos:definition "software to convert spoken language into text"@en ;
  rdfs:isDefinedBy <https://en.wikipedia.org/wiki/Transcription_(linguistics)> ;
- skos:broader tadirah:capture ;
+ skos:broader tadirah:capturing ;
  skos:broader csdtt:0112 .
 
 csdtt:0090 a skos:Concept ;
@@ -683,7 +676,7 @@ csdtt:0100 a skos:Concept ;
 csdtt:0101 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "text to speech"@en ;
- skos:definition "software to convert natural language tekst into speech"@en ;
+ skos:definition "software to convert natural language text into speech"@en ;
  rdfs:seeAlso <https://en.wikipedia.org/wiki/Speech_synthesis> ;
  skos:broader csdtt:0112 .
 
@@ -753,7 +746,7 @@ csdtt:0111 a skos:Concept ;
  skos:definition "Digital image processing is the use of a digital computer to process digital images through an algorithm"@en ;
  rdfs:isDefinedBy <https://en.wikipedia.org/wiki/Digital_image_processing> ;
  skos:closeMatch tadirah:imaging ;
- skos:broader tadirah:capture ;
+ skos:broader tadirah:capturing ;
  skos:narrower csdtt:0062 ;
  skos:topConceptOf csdtt: .
 
@@ -768,7 +761,7 @@ csdtt:0112 a skos:Concept ;
 csdtt:0113 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "text categorization"@en ;
- skos:definition "software to assign a tekst to one or more categories"@en ;
+ skos:definition "software to assign a text to one or more categories"@en ;
  rdfs:seeAlso <https://en.wikipedia.org/wiki/Document_classification> ;
  skos:narrower csdtt:0120, csdtt:0119, csdtt:0104, csdtt:0092, csdtt:0084, csdtt:0075, csdtt:0072, csdtt:0039, csdtt:0008 ;
  skos:broader csdtt:0100 .
@@ -776,7 +769,7 @@ csdtt:0113 a skos:Concept ;
 csdtt:0114 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "lexicon processing"@en ;
- skos:definition "a set of entries of a linguistic unit (morpheme, word, multiword expression, etc) and its properties"@en ;
+ skos:definition "a set of entries of a linguistic unit (morpheme, word, multiword expression, etc.) and its properties"@en ;
  rdfs:seeAlso <https://en.wikipedia.org/wiki/Lexicon> ;
  skos:narrower  csdtt:0041 , csdtt:0042,  csdtt:0043;
  skos:topConceptOf csdtt: .
@@ -791,7 +784,7 @@ csdtt:0120 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "authorship profiling"@en ;
  skos:definition "determine characteristics of the author of a text"@en ;
- rdfs:isDefinedBy: <https://en.wikipedia.org/wiki/Author_profiling> ;
+ rdfs:isDefinedBy <https://en.wikipedia.org/wiki/Author_profiling> ;
  skos:broader csdtt:0113 .
 
 csdtt:0121 a skos:Concept ;
@@ -840,7 +833,7 @@ csdtt:0126 a skos:Concept ;
 csdtt:0127 a skos:Concept ;
  skos:inScheme csdtt: ;
  skos:prefLabel "generation"@en ;
- skos:definition "the process of creating natural langugae expressions"@en ;
+ skos:definition "the process of creating natural language expressions"@en ;
  skos:narrower csdtt:0059 ;
  skos:topConceptOf csdtt: .
 
@@ -898,7 +891,7 @@ csdtt: a skos:ConceptScheme ;
  dct:license <https://creativecommons.org/publicdomain/zero/1.0> ;
  dc:title "CLARIN taxonomy for tools and services tasks"@en ;
  dct:created "2023-09-01"^^xsd:date ;
- dct:language iso369-3:dut, iso369-3:eng;
+ dct:language iso639-3:nld, iso639-3:eng;
  dct:modified "2023-11-01"^^xsd:date ;
  owl:versionInfo "1.2"^^xsd:string ;
  dc:identifier <http://hdl.handle.net/11459/CCR_C-2500_a16d939a-58e3-121d-aaa3-05237ec2d206> ;
